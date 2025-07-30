@@ -1,36 +1,29 @@
-🏆 Tier List Drag & Drop
+# 🏆 Tier List Drag & Drop
 Este proyecto es una aplicación web que permite crear una Tier List personalizada utilizando HTML, CSS y JavaScript. Incluye funcionalidades de arrastrar y soltar elementos (drag & drop) y carga de imágenes desde el equipo del usuario mediante la API FileReader.
 
-🚀 Funcionalidades
+## 🚀 Funcionalidades
+
 ✅ Arrastrar y soltar ítems entre diferentes niveles de la tier list.
 
 🖼️ Subir imágenes personalizadas usando la API FileReader.
 
 📦 Interfaz intuitiva y responsiva.
 
-🧩 Uso de eventos nativos de JavaScript:
+## 🧩 Uso de eventos nativos de JavaScript:
 
-  dragstart
+- dragstart
 
-  dragover
+- dragover
 
-  dragleave
+- dragleave
 
-  drop
+- drop
 
-  dragend
+- dragend
 
+## 📚 Aprendizajes clave
+- Implementación de una interfaz interactiva sin frameworks externos.
 
-🛠️ Tecnologías utilizadas
-HTML5 – Estructura del documento
+- Manejo de eventos drag & drop de forma nativa.
 
-CSS3 – Estilos personalizados
-
-JavaScript – Lógica de interacción drag & drop y carga de archivos.
-
-📚 Aprendizajes clave
-Implementación de una interfaz interactiva sin frameworks externos.
-
-Manejo de eventos drag & drop de forma nativa.
-
-Lectura de archivos locales con FileReader para mostrar imágenes en pantalla.
+- Lectura de archivos locales con FileReader para mostrar imágenes en pantalla.
