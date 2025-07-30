@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tier List</title>
+        <link rel="stylesheet" href="./Assets/styles.css" />
+        <script type="module" src="./scripts.js" defer></script>
+    </head>
+    <body>
+        <header id="header">
+            <img src="./Assets/Images/TierList.png" alt="Tier List" />
+        </header>
+        <main>
+            <section class="tier-list">
+                <div class="tier-list-item">
+                    <aside class="tier-list-category" style="--level: var(--color-s)">S</aside>
+                </div>
+                <div class="tier-list-item">
+                    <aside class="tier-list-category" style="--level: var(--color-a)">A</aside>
+                </div>
+                <div class="tier-list-item">
+                    <aside class="tier-list-category" style="--level: var(--color-b)">B</aside>
+                </div>
+                <div class="tier-list-item">
+                    <aside class="tier-list-category" style="--level: var(--color-c)">C</aside>
+                </div>
+                <div class="tier-list-item">
+                    <aside class="tier-list-category" style="--level: var(--color-d)">D</aside>
+                </div>
+                <div class="tier-list-item">
+                    <aside class="tier-list-category" style="--level: var(--color-e)">E</aside>
+                </div>
+            </section>
+            <section class="selector">
+                <div class="selector-buttons">
+                    <label>
+                        <img src="./Assets/Icons/Load File.svg" alt="Add" />
+                        <input accept="image/*" type="file" id="add-file" hidden />
+                    </label>
+                    <label>
+                        <img src="./Assets/Icons/reload.svg" alt="Rload" />
+                        <input type="reset" name="Reload" id="reload" hidden />
+                    </label>
+                </div>
+                <div class="files-container">
+
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

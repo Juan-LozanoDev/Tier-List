@@ -1,0 +1,117 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-s: #ff7f7f;
+    --color-a: #ffbf7f;
+    --color-b: #ffdf7f;
+    --color-c: #ffff7f;
+    --color-d: #bfff7f;
+    --color-e: #7ebcfe;
+}
+
+body {
+    background: "#ffffff";
+    background-image: radial-gradient(
+          circle at top center,
+          rgba(70, 121, 180, 0.5),
+          transparent 70%
+        );
+    filter: "blur(80px)";
+    background-repeat: "no-repeat";
+    padding: 2rem;
+    min-height: 100dvh;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    & img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+.tier-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.tier-list-item {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: all 0.3s ease;
+    
+    & aside {
+        background: var(--level, rgb(92, 190, 255));
+        width: 85px;
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px; 
+    };
+}
+
+.selector-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 2rem;
+
+    & label {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+.files-container {
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    display: flex;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.image-item {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: grab;
+    background-color: white;
+}
+
+.image-item:active {
+    cursor: grabbing;
+}
+
+.drag-over {
+        background-color: rgba(0, 0, 0, 0.6);
+        scale: 1.01;
+}
+
+.preview-element {
+    opacity: 0.4;
+    pointer-events: none;
+}
