@@ -132,5 +132,3 @@ function handleDragLeave(event) {
     // Se elimina el elemento preview del contenedor en el que estaba la imagen
     currentTarget.querySelector('.preview-element')?.remove();
 }
-
-
